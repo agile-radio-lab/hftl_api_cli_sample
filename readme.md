@@ -14,7 +14,7 @@ The following commands are working for Linux and macOS with installed Python and
 In the project folder:
 ```bash
 virtualenv venv
-source venv/
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
