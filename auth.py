@@ -1,7 +1,7 @@
 __author__ = "Igor Kim"
 __credits__ = ["Igor Kim"]
 __maintainer__ = "Igor Kim"
-__email__ = "kim@hft-leipzig.de"
+__email__ = "igor.kim@htwk-leipzig.de"
 __status__ = "Development"
 __date__ = "11/2019"
 __license__ = "MIT"
@@ -9,7 +9,7 @@ __license__ = "MIT"
 import requests
 import argparse
 
-DEFAULT_API_URL = "https://api.otc.roundeasy.ru/"
+DEFAULT_API_URL = "https://rest.radiolab-dev0.beagile.one/"
 
 parser = argparse.ArgumentParser(description='Update HfTL API session')
 parser.add_argument('--api-url', type=str,
