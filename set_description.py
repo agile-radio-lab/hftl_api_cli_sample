@@ -1,7 +1,7 @@
 __author__ = "Igor Kim"
 __credits__ = ["Igor Kim"]
 __maintainer__ = "Igor Kim"
-__email__ = "kim@hft-leipzig.de"
+__email__ = "igor.kim@htwk-leipzig.de"
 __status__ = "Development"
 __date__ = "11/2019"
 __license__ = "MIT"
@@ -9,7 +9,7 @@ __license__ = "MIT"
 import requests
 import argparse
 
-DEFAULT_API_URL = "https://api.otc.roundeasy.ru/"
+DEFAULT_API_URL = "https://rest.radiolab-dev0.beagile.one/"
 
 parser = argparse.ArgumentParser(description='Update HfTL API session')
 parser.add_argument('--token', type=str, required=True, help='API Token')
@@ -36,7 +36,7 @@ def main():
 
     resp = requests.get(session_url, headers=headers)
     if resp.status_code == 401:
-        print("Invalid token, issue your token:\n\thttps://auth.cloud.radiolab.ml")
+        print("Invalid token, issue your token:\n\thttps://rest-api-web-auth.now.sh")
         return
     if resp.status_code == 404:
         print("Session %s not found" % args.sid)
